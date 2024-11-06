@@ -12,7 +12,7 @@ const Header = () => {
                 <Link to = "/" className="flex text-1xl font-bold tracking-tight text-black ">
                     <img src={logo} alt="company logo" className="md:h-8 md:mr-4 h-10"/>
                     <span className="hidden md:flex items-center text-1xl font-bold tracking-tight text-black -mt">
-                        Protein-Protein-I-Want-Protein
+                        EAT-EAT-I-WANT-EAT
                     </span>
                 </Link>
             </div>

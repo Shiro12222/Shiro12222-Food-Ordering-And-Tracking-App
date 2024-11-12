@@ -33,7 +33,6 @@ const HomePage = () => {
                 </div>
             </div>
         </div>
-        <hr className="border-grey"/>
     </div>
   );
 };

@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "main": "./src/index.ts",
   "scripts": {
-    "dev": "nodemon"
+    "dev": "nodemon",
+    "start": "nodemon --exec ts-node src/index.ts"
   },
   "keywords": [],
   "author": "",
@@ -17,10 +18,16 @@
     "mongoose": "^8.8.0"
   },
   "devDependencies": {
+    "@types/chai": "^5.0.1",
     "@types/cors": "^2.8.17",
     "@types/express": "^5.0.0",
+    "@types/mocha": "^10.0.9",
     "@types/node": "^22.9.0",
+    "@types/sinon": "^17.0.3",
+    "chai": "^5.1.2",
+    "mocha": "^10.8.2",
     "nodemon": "^3.1.7",
+    "sinon": "^19.0.2",
     "ts-node": "^10.9.2",
     "typescript": "^5.6.3"
   }

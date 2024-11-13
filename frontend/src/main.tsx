@@ -24,8 +24,9 @@ createRoot(document.getElementById('root')!).render(
             <Toaster
               visibleToasts={1}
               position="bottom-right"
-              richColors
+              // richColors
               duration={4000}
+              theme='dark'
             />
         </Auth0ProviderWithNaviagte>
       </QueryClientProvider>

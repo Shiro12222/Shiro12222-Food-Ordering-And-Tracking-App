@@ -4,13 +4,14 @@ import Header from "@/components/Header";
 
 type Props = {
   children: React.ReactNode;
+  showBackground?: boolean;
 }
 
-const Layout = ({ children }: Props) => {
+const Layout = ({ children, showBackground = false }: Props) => {
   return (
     <div className="flex flex-col min-h-screen">
         <Header />
-        <BackGround />
+        {showBackground && <BackGround/>}
         <div className="container mx-auto flex-1 py-10">
             {children}
         </div>

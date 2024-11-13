@@ -49,7 +49,7 @@ const UserProfileForm = ({ onSave, isLoading }: Props) => {
                                 Email
                             </FormLabel>
                             <FormControl>
-                                <Input placeholder="input your email here" {...field} className="bg-white"/>
+                                <Input placeholder="input your email here" {...field} disabled className="bg-white"/>
                             </FormControl>
                         </FormItem>
                     )}
@@ -72,60 +72,61 @@ const UserProfileForm = ({ onSave, isLoading }: Props) => {
                 />
 
 
-                    <div className="flex flex-col md:flex-row gap-4 my-2">
-                        <FormField 
-                            control={form.control} 
-                            name = "addressLine1"
-                            render ={({ field }) => (
-                            <FormItem className="flex-1">
-                                <FormLabel>
-                                    AddressLine1
-                                </FormLabel>
-                                <FormControl>
-                                    <Input placeholder="input your addressLine1 here" {...field} className="bg-white"/>
-                                </FormControl>
-                                <FormMessage/>
-                            </FormItem>
-                            )}
-                        />
+                <div className="flex flex-col md:flex-row gap-4 my-2">
+                    <FormField 
+                        control={form.control} 
+                        name = "addressLine1"
+                        render ={({ field }) => (
+                        <FormItem className="flex-1">
+                            <FormLabel>
+                                AddressLine1
+                            </FormLabel>
+                            <FormControl>
+                                <Input placeholder="input your addressLine1 here" {...field} className="bg-white"/>
+                            </FormControl>
+                            <FormMessage/>
+                        </FormItem>
+                        )}
+                    />
 
-                        <FormField 
-                            control={form.control} 
-                            name = "city"
-                            render ={({ field }) => (
-                            <FormItem className="flex-1">
-                                <FormLabel>
-                                    City
-                                </FormLabel>
-                                <FormControl>
-                                    <Input placeholder="input your city here" {...field} className="bg-white"/>
-                                </FormControl>
-                                <FormMessage/>
-                            </FormItem>
-                            )}
-                        />
+                    <FormField 
+                        control={form.control} 
+                        name = "city"
+                        render ={({ field }) => (
+                        <FormItem className="flex-1">
+                            <FormLabel>
+                                City
+                            </FormLabel>
+                            <FormControl>
+                                <Input placeholder="input your city here" {...field} className="bg-white"/>
+                            </FormControl>
+                            <FormMessage/>
+                        </FormItem>
+                        )}
+                    />
 
-                        <FormField 
-                            control={form.control} 
-                            name = "country"
-                            render ={({ field }) => (
-                            <FormItem className="flex-1">
-                                <FormLabel>
-                                    Country
-                                </FormLabel>
-                                <FormControl>
-                                    <Input placeholder="input your country here" {...field} className="bg-white"/>
-                                </FormControl>
-                                <FormMessage/>
-                            </FormItem>
-                            )}
-                        />
-                    </div>
-                    {isLoading? ( 
-                        <ButtonLoading/> 
-                    ) : (
-                        <Button type="submit" className="flex flex-1 font-bold bg-black" >Submit</Button> 
-                    )}
+                    <FormField 
+                        control={form.control} 
+                        name = "country"
+                        render ={({ field }) => (
+                        <FormItem className="flex-1">
+                            <FormLabel>
+                                Country
+                            </FormLabel>
+                            <FormControl>
+                                <Input placeholder="input your country here" {...field} className="bg-white"/>
+                            </FormControl>
+                            <FormMessage/>
+                        </FormItem>
+                        )}
+                    />
+                </div>
+
+                {isLoading? ( 
+                    <ButtonLoading/> 
+                ) : (
+                    <Button type="submit" className="flex flex-1 font-bold bg-black" >Submit</Button> 
+                )}
              </form>
         </Form>
     )

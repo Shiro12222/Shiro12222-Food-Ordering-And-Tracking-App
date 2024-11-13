@@ -62,7 +62,7 @@ const updateCurrentUser = async (req: Request, res: Response) => {
         user.city = city;
         user.country = country;
 
-        await user.save;
+        await user.save();
         res.send(user);
 
     } catch (error) {

@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import logo from '../assets/images/logo.png'; 
+import logo from '../assets/images/Logo.png'; 
 import MobileNav from "./MobileNav";
 import MainNav from "./MainNav";
 
@@ -12,7 +12,7 @@ const Header = () => {
                 <Link to = "/" className="flex text-1xl font-bold tracking-tight text-black ">
                     <img src={logo} alt="company logo" className="md:h-8 md:mr-4 h-10"/>
                     <span className="hidden md:flex items-center text-1xl font-bold tracking-tight text-black -mt">
-                        EAT-EAT-I-WANT-EAT
+                        HUNGRYHIVE
                     </span>
                 </Link>
             </div>

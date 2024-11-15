@@ -21,7 +21,7 @@ const MobileNav = () => {
                             {user?.email}
                         </span> 
                     ) : (
-                        <span>Welcome to EATeat.com</span>
+                        <span>Welcome to HungryHive.com</span>
                     )}
                 </SheetTitle>
                 <Separator/>

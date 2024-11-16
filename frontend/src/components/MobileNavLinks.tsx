@@ -13,9 +13,15 @@ const MobileNavLinks = () => {
                 >
                     User Profile
                 </Link>
+                <Link
+                    to ="/restaurant-management"
+                    className="w-full my-2 bg-black rounded-md py-2 font-bold"
+                >
+                        Restaurant Management
+                </Link>
                 <Button
                     onClick={() => logout()}
-                    className="w-full bg-black rounded-md py-2 font-bold"
+                    className="w-full my-2 bg-black rounded-md py-2 font-bold"
                 >
                     Log Out
                 </Button>

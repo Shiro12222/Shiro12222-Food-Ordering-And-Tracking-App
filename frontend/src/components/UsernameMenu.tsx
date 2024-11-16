@@ -23,6 +23,15 @@ const UsernameMenu = () => {
                 </Link>
             </DropdownMenuItem>
             <Separator/>
+                <DropdownMenuItem>
+                    <Link
+                        to ="/restaurant-management"
+                        className="w-full py-2 text-center bg-black rounded-md text-white font-bold"
+                    >
+                        Restaurant Management
+                    </Link>
+                </DropdownMenuItem>
+            <Separator/>
             <DropdownMenuItem>
                 <Button 
                     onClick={() => logout()}

@@ -57,7 +57,7 @@ const UserProfileForm = ({ onSave, isLoading, currentUser}: Props) => {
                                 Email
                             </FormLabel>
                             <FormControl>
-                                <Input placeholder="input your email here" {...field} disabled className="bg-white"/>
+                                <Input placeholder="Input your email here" {...field} disabled className="bg-white"/>
                             </FormControl>
                         </FormItem>
                     )}
@@ -72,7 +72,7 @@ const UserProfileForm = ({ onSave, isLoading, currentUser}: Props) => {
                                 Name
                             </FormLabel>
                             <FormControl>
-                                <Input placeholder="input your name here" {...field} className="bg-white"/>
+                                <Input placeholder="Input your name here" {...field} className="bg-white"/>
                             </FormControl>
                             <FormMessage/>
                         </FormItem>
@@ -90,7 +90,7 @@ const UserProfileForm = ({ onSave, isLoading, currentUser}: Props) => {
                                 AddressLine1
                             </FormLabel>
                             <FormControl>
-                                <Input placeholder="input your addressLine1 here" {...field} className="bg-white"/>
+                                <Input placeholder="Input your addressLine1 here" {...field} className="bg-white"/>
                             </FormControl>
                             <FormMessage/>
                         </FormItem>
@@ -106,7 +106,7 @@ const UserProfileForm = ({ onSave, isLoading, currentUser}: Props) => {
                                 City
                             </FormLabel>
                             <FormControl>
-                                <Input placeholder="input your city here" {...field} className="bg-white"/>
+                                <Input placeholder="Input your city here" {...field} className="bg-white"/>
                             </FormControl>
                             <FormMessage/>
                         </FormItem>
@@ -122,7 +122,7 @@ const UserProfileForm = ({ onSave, isLoading, currentUser}: Props) => {
                                 Country
                             </FormLabel>
                             <FormControl>
-                                <Input placeholder="input your country here" {...field} className="bg-white"/>
+                                <Input placeholder="Input your country here" {...field} className="bg-white"/>
                             </FormControl>
                             <FormMessage/>
                         </FormItem>

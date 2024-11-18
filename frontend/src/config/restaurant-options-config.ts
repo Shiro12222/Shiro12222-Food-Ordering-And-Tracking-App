@@ -28,5 +28,7 @@ export const cuisineList = [
     "British",
     "Cajun",
     "Peruvian",
-    "Swiss"
+    "Swiss",
+    "Why would u wanna click this",
+    "wait what",
 ];

@@ -22,7 +22,9 @@ const CuisinesSelectionForm = () => {
                 name = "cuisines"
                 render={({ field }) => (
                     <FormItem className="grid grid-cols-1 md:grid-cols-4 gap-4">
-                        {cuisineList.map((cuisineItem) => (<CuisineCheckbox cuisine = {cuisineItem} field = {field}/>))}
+                        {cuisineList.map((cuisineItem) => (
+                            <CuisineCheckbox cuisine = {cuisineItem} field = {field}/>
+                        ))}
                         <FormMessage/>
                     </FormItem>
                 )}

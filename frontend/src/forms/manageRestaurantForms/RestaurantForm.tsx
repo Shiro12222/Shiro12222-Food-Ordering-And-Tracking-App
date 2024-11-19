@@ -15,8 +15,8 @@ import { useEffect } from "react";
 
 const formSchema = z.object({
     restaurantName: z.string({required_error: "restaurant name is required!"}),
-    city: z.string({required_error: "city is required!"}),
-    country: z.string({required_error: "country name is required!"}),
+    district: z.string({required_error: "district is required!"}),
+    city: z.string({required_error: "city name is required!"}),
     deliveryPrice: z.coerce.number({required_error: "delivery price is required!", invalid_type_error: "must be a valid number"}),
     estimatedDeliveryTime: z.coerce.number({required_error: "estimated delivery time is required!", invalid_type_error: "must be a valid number"}),
     cuisines: z.array(z.string().nonempty({message: "select at least one item"})),
@@ -73,8 +73,8 @@ const RestaurantForm = ({onSave, isLoading, restaurant}: Props) => {
         const formData = new FormData();
 
         formData.append("restaurantName", formDataJson.restaurantName);
+        formData.append("district", formDataJson.district);
         formData.append("city", formDataJson.city);
-        formData.append("country", formDataJson.country);
 
         formData.append("deliveryPrice", formDataJson.deliveryPrice.toString());
         formData.append("estimatedDeliveryTime", formDataJson.estimatedDeliveryTime.toString());

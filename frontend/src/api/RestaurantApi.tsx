@@ -5,14 +5,14 @@ import { useQuery } from "react-query";
 
 const API_BASE_URL = import.meta.env.VITE_API_BASE_URL;
 
-export const useSearchRestaurants = (searchState: SearchState, city?: string) => {
+export const useSearchRestaurants = (searchState: SearchState, district?: string) => {
     const createSearchRequest = async(): Promise<RestaurantSearchResponse> => {
         const params = new URLSearchParams();
         params.set("searchQuery", searchState.searchQuery);
         params.set("page", searchState.page.toString());
 
         const response = await fetch(
-            `${API_BASE_URL}/api/restaurant/search/${city}?${params.toString()}`
+            `${API_BASE_URL}/api/restaurant/search/${district}?${params.toString()}`
         );
 
         if(!response.ok){
@@ -25,7 +25,7 @@ export const useSearchRestaurants = (searchState: SearchState, city?: string) =>
     const { data: results, isLoading } = useQuery(
         ["searchRestaurants"],
         createSearchRequest,
-        { enabled: !!city }
+        { enabled: !! district }
     );
 
     return { 

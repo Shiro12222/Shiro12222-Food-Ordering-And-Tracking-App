@@ -14,7 +14,7 @@ export type SearchState = {
 }
 
 const SearchPage = () => {
-  const { city } = useParams();
+  const { district } = useParams();
   const [searchState, setSearchState] = useState<SearchState>({
     searchQuery: "",
     page: 1,
@@ -23,7 +23,7 @@ const SearchPage = () => {
 
   const [isExpanded, setIsExpanded] = useState<boolean>(false);
 
-  const { results, isLoading } = useSearchRestaurants(searchState, city);
+  const { results, isLoading } = useSearchRestaurants(searchState, district);
 
   const setSelectedCuisines = (selectCuisines: string[]) => {
     setSearchState((prevState) => ({
@@ -62,7 +62,7 @@ const SearchPage = () => {
     <span>Loading...</span>
   }
 
-  if(!results?.data || !city){
+  if(!results?.data || !district){
     return <span>No results found</span>
   }
   
@@ -86,7 +86,7 @@ const SearchPage = () => {
             placeHolder="Search by Cuisine or Restaurant Name"
             onReset={resetSearch}
           />
-          <SearchResultInfo total={results.pagination.total} city={city}/>
+          <SearchResultInfo total={results.pagination.total} district={district}/>
           {results.data.map((restaurant)=>(
             <SearchResultCard restaurant={restaurant}/>
           ))}

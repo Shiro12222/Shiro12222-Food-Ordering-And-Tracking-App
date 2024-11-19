@@ -13,7 +13,7 @@ const AppRoutes = ()=> {
         <Routes>
             <Route path="/" element={<Layout showBackground><HomePage/></Layout>} />
             <Route path="auth-callback" element={<AuthCallbackPage/>} />
-            <Route path="/search/:city" element={<Layout showBackground={false}><SearchPage/></Layout>}/>
+            <Route path="/search/:district" element={<Layout showBackground={false}><SearchPage/></Layout>}/>
             <Route path="/detail/:restaurantId" element={<Layout showBackground={false}><DetailPage/></Layout>}/>
             <Route element={<ProtectedRoute/>}>
                 <Route path="user-profile" element={<Layout> <UserProfilePage/></Layout>} />

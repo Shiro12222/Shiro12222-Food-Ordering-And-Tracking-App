@@ -20,7 +20,7 @@ const HomePage = () => {
                 Craving something tasty?
             </h1>
             <span className="text-xl">Your next meal is just a click away</span>
-            <SearchBar placeHolder="Search by City or Town" onSubmit={handleSearchSubmit}/>
+            <SearchBar placeHolder="Search by District" onSubmit={handleSearchSubmit}/>
         </div>
         <div className="grid md:grid-cols-2 gap-5 flex-row ">
             <div className="flex flex-col items-center justify-center gap-4 text-center mx-4">

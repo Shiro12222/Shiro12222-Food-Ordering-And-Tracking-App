@@ -20,8 +20,8 @@ export const validateMyUserRequest = [
 
 export const validateMyRestaurantRequest = [
     body("restaurantName").isString().notEmpty().withMessage("Restaurant is required"),
+    body("district").isString().notEmpty().withMessage("District is required"),
     body("city").isString().notEmpty().withMessage("City is required"),
-    body("country").isString().notEmpty().withMessage("Country is required"),
     body("deliveryPrice").isNumeric().withMessage("Delivery price must be a number").isFloat({ min: 0 }).withMessage("Delivery price must be greater than zero"),
     body("estimatedDeliveryTime").isNumeric().withMessage("Estimated delivery time must be a number").isInt({ gt: 0 }).withMessage("Estimated delivery time must be greater than zero"),
     body("cuisines").isArray().withMessage("Cuisines must be an array").not().isEmpty().withMessage("cuisine must be an array"),

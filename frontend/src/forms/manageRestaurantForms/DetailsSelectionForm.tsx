@@ -34,14 +34,14 @@ const DetailSelectionForm = () => {
 
             <FormField
                 control={control}
-                name = "city"
+                name = "district"
                 render={({ field }) => (
                     <FormItem className="flex-1">
                         <FormLabel>
-                            City
+                            District
                         </FormLabel>
                         <FormControl>
-                            <Input placeholder = "Input your city here" {...field} className="bg-white"/>
+                            <Input placeholder = "Input your district here" {...field} className="bg-white"/>
                         </FormControl>
                         <FormMessage/>
                     </FormItem>
@@ -50,14 +50,14 @@ const DetailSelectionForm = () => {
 
             <FormField
                 control={control}
-                name = "country"
+                name = "city"
                 render={({ field }) => (
                     <FormItem className="flex-1">
                         <FormLabel>
-                            Country
+                            City
                         </FormLabel>
                         <FormControl>
-                            <Input placeholder = "Input your country here" {...field} className="bg-white"/>
+                            <Input placeholder = "Input your city here" {...field} className="bg-white"/>
                         </FormControl>
                         <FormMessage/>
                     </FormItem>

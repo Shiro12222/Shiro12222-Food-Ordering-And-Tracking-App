@@ -19,7 +19,7 @@ const OrderSummary = ({restaurant, cartItems, removeFromCart}: Props) => {
             0
         );
 
-        const totalPrice = totalItemPrice + restaurant.deliveryPrice;
+        const totalPrice = totalItemPrice / 100 + restaurant.deliveryPrice;
 
         return (totalPrice);
     };

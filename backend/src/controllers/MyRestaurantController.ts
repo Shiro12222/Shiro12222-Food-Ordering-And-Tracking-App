@@ -59,6 +59,7 @@ const getRestaurantMiddleware = async (
     }
 };
 
+
 const getMyRestaurant = async (req: Request, res: Response) => {
     try {
         const restaurant = await Restaurant.findOne({ user: req.userId });

@@ -29,8 +29,8 @@ export const useGetMyRestaurant = () => {
 
     return {
         restaurant,
-        isLoading
-    }
+        isLoading,
+    };
 };
 
 export const useCreateMyRestaurant = () => {

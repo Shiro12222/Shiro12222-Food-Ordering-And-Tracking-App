@@ -5,7 +5,7 @@ import MainNav from "./MainNav";
 
 const Header = () => {
   return (
-    <div className="border-2 border-b-black py-4">
+    <div className="border-2 border-b-teal-950 py-4">
         <div className="container mx-auto flex justify-between items-center">
 
             <div className="flex-1 flex justify-center md:justify-start">
